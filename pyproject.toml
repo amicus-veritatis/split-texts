@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "split-texts"
+version = "0.1.0"
+description = ""
+authors = ["amicus-veritatis <otome@u.sogang.ac.kr>"]
+readme = "README.md"
+packages = [{include = "split_texts"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+langchain = "^0.0.148"
+
+[tool.poetry.scripts]
+split-texts = "split_texts.__main__:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
